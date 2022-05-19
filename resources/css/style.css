@@ -1,0 +1,33 @@
+body {
+    color: #737491;
+    font-family: 'Inter', sans-serif;
+}
+.signin{
+    height: 100vh;
+}
+.signin-form{
+    width: 550px;
+    min-height: 550px;
+    position: relative;
+}
+.signin-inner{
+    position: relative;
+    z-index: 9999;
+    width: 360px;
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+}
+.signin-form::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 550px;
+    background:url(../img/signin-illustration.png) no-repeat center / cover;
+}
+.signin input:focus,
+.signin .btn:focus {
+    box-shadow: none;
+}
